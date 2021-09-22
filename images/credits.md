@@ -1,7 +1,7 @@
 ### background by Minisnail
 [Minisnail's DeviantArt](https://www.deviantart.com/minisnail "Minisnail - DeviantArt")
 
-### bouncing takodachi by ???
+### bouncing takodachi from Ina's loading screen
 
 
-if you are either Minisnail or the mystery artist and want it removed, [email me](mailto:tangerlemon@gmail.com "tangerlemon@gmail.com") and I'll replace it
+##### if you made one of these and want it removed, [email me](mailto:tangerlemon@gmail.com "tangerlemon@gmail.com") and I'll replace it
