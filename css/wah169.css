@@ -22,8 +22,8 @@
   --font-display: var(--main-font);
   --text-normal: #dcdddeff;
   --text-muted: #72767dff;
-  --channels-width: 210px;
-  --members-width: 200px;
+  --channels-width: 250px;
+  --members-width: 250px;
   --background-shading: 100%;
   --background-overlay: #00000099;
   --background-image: url('https://tangerlemon.github.io/wah/images/wah.png');
