@@ -3,7 +3,7 @@
 
 
 :root {
-  --main-color: #7c6c8d;
+  /*--main-color: #7c6c8d;*/
   --hover-color: #7100FF79;
   --success-color: #1e63b3;
   --danger-color: #982929;
@@ -14,8 +14,7 @@
   --url-color: #1A569BFF;
   --online-color: #43b581;
   --idle-color: #faa61a;
-  /* --dnd-color: #982929; */
-   --dnd-color: #ff00ff;
+  --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
 
