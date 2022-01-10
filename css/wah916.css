@@ -3,8 +3,8 @@
 
 
 :root {
-  /*--main-color: #7c6c8d;*/
-  --hover-color: #7100FF79;
+  /*--main-color: #7c6c8d;
+  --hover-color: #7100FF79;*/
   --success-color: #1e63b3;
   --danger-color: #982929;
   --channel-unread: var(--main-color);
