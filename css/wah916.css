@@ -1,92 +1,153 @@
-/* wah v2.0a by tangerlemon */
+/* wah v2.3 by tangerlemon */
 
 :root {
     /* images */
     --background-image: url('https://tangerlemon.github.io/wah/images/wahTall.png');
     --home-icon: url('https://tangerlemon.github.io/wah/images/takodachi_bounce.gif');
 
+
+    /* variables to make things easier for myself */
+    --color-1: #000000a0;
+    --color-2: #000000c8;
+    --color-3: #00000070;
+    --color-4: #40308040;
+
+
     /* home icon */
-    --home-icon-fill: none;
+    --home-icon-default-fill: none;
+    --home-icon-background-color: #50408060;    /* also for servers  */
+    --home-icon-hover-color: #50408060;        /*   with no icon   */
     --home-icon-width: 35px;
     --home-icon-height: 35px;
     --home-icon-vertical-position: -5px;
     --home-icon-horizontal-position: -2px;
+    --home-icon-hover-fade-in: 0.2s;
+    --home-icon-hover-fade-out: 0.2s;
 
 
-    --chat-background: #00000070;
-    --members-background: #00000090;
-    --search-bar-background: #00000070;
+    /* main chat window */
+    --chat-background: var(--color-1);
+    --chat-text-box-background: var(--color-3);
+
+    --chat-scrollbar-width: 15px;
+    --chat-scrollbar-color: var(--color-3);
+    --chat-scrollbar-thumb-color: #60406060;
+    --chat-scrollbar-thumb-hover-color: #302030a0;
+
+
+    --search-bar-background: var(--color-3);
+    --top-bar-background: var(--color-2);
+    --info-panel-background: transparent;
 
 
     /* server list */
-    --servers-background: #00000090;
-    --server-folder-expanded-background: #50406040;
-    --server-folder-expanded-icon: transparent;
-    --server-folder-expanded-icon-hover: transparent;
-    --server-folder-collapsed-background: transparent;
-    --server-folder-collapsed-background-hover: transparent;
+    --servers-background: var(--color-2);
+    --server-folder-background: transparent;
 
-    --top-bar-background: #00000040;
-    --info-panel-background: #00000000;
+    --server-folder-expanded-background: var(--color-4);
+    --server-folder-expanded-icon-background: #141125;
+    --server-folder-expanded-icon-hover: #141125;
+
+    --server-folder-collapsed-background: var(--color-4);
+    --server-folder-collapsed-background-hover: transparent;
+    --server-hover-fade-in: 0.2s;
+    --server-hover-fade-out: 0.2s;
+
+    --server-add-browse-background: var(--color-4);
+    --server-add-browse-icon-color: #807090;
+
+    --server-popout-background: #000000f0;
+    --server-dot: #807090;
 
 
     /* channels */
-    --channels-background: #00000090;
+    --channels-background: var(--color-2);
     --channel-color: #888;
     --channel-selected-color: #fff;
     --channel-unread-color: #d8d8d8;
     --channel-hover-color: #f0f;
-    --hover-color-fade: 0.2s;
 
     --category-color: #6f4f7f;
     --category-hover-color: #9f7faf;
 
-    --new-unread-bar: #50406070;
-    --new-unread-bar-text: #e0e0e0;
-    --new-unread-bar-hover: #fff;
+    --new-unread-bar: #403050a0;
+    --new-unread-text: #e0e0e0;
+    --new-unread-hover: #fff;
+    --new-unread-hover-fade-in: 0.2s;
+    --new-unread-hover-fade-out: 0.2s;
 
     --channels-width: 236px;
-    --channels-position-top: -5px;
-    --channels-position-right: 0px;
-    --channels-position-bottom: 0px;
-    --channels-position-left: 0px;
+    --channels-spacing-top: -5px;
+    --channels-spacing-right: 0px;
+    --channels-spacing-bottom: 0px;
+    --channels-spacing-left: 0px;
     --category-align: center;
+
+    --friends-list-search-background: var(--color-3);
+    --friends-list-search-small-background: var(--color-3);
+
+
+    /* member list */
+    --members-background: var(--color-2);
 
 
     /* titlebar */
-    --titlebar-background: #00000090;
+    --titlebar-background: var(--color-2);
     
-    --titlebar-discord-position-vertical: 0px;
+    --titlebar-discord-position-vertical: -3px;
     --titlebar-discord-position-horizontal: 0px;
 
     --min-maximize-button-color: #aaa;
     --close-button-color: #900;
-    --windows-buttons-position-vertical: 1px;
-    --windows-buttons-position-horizontal: 0px;
+    --windows-buttons-position-vertical: -2px;
+    --windows-buttons-position-horizontal: 3px;
+
+
+    /* misc */
+    --role-background: #222222a0;
+
+    --right-click-background: #000000f0;
+
+    --user-popout-background: #000000f0;
+    --user-popout-message-background: #30303030;
+
+    --quickswitcher-background: #000000a0;
+    --quickswitcher-list-background: transparent;
+    --quickswitcher-textbox-background: transparent;
+
+    --highlight-color: #40206080;
+    --highlight-text-color: #ecf;
+
+
+    /* messages */
+    --code-block-background: #141414ba;
+    --embed-color: #141414ba;
+    --link-color: #7068a0;
+
+    --timestamp-color: #777;
+    --edited-color: #777;
+
+    --date-seperator-color: var(--color-3);
 }
 
 
 
 
-.homeIcon-r0w4ny {
-    background: var(--home-icon) center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: var(--home-icon-width);
-    height: var(--home-icon-height);
-    margin-top: var(--home-icon-vertical-position);
-    margin-left: var(--home-icon-horizontal-position);
-}
-.homeIcon-r0w4ny > path {
-    fill: var(--home-icon-fill);
-}
 
 
 
 
-.userPopout-2j1gM4 {
-    background-color: var();
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,6 +167,26 @@
 
 
 /* messages */
+.content-3spvdd {
+    background-color: var(--date-seperator-color);
+}
+.markup-eYLPri code {
+    background-color: var(--code-block-background);
+}
+.compact-2Nkcau .timestamp-p1Df1m,
+.cozy-VmLDNB .timestamp-p1Df1m,
+.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
+    color: var(--timestamp-color);
+}
+.edited-1v5nT8 {
+    color: var(--edited-color);
+}
+.embedFull-1HGV2S {
+    background-color: var(--embed-color);
+}
+.markup-eYLPri a {
+    color: var(--link-color);
+}
 
 
 /* server list */
@@ -115,20 +196,35 @@
 .wrapper-1_HaEi {
     background-color: transparent;
 }
+.folder-241Joy {
+    background-color: transparent;
+}
+.folder-241Joy.hover-3m7-WT {
+    background-color: transparent;
+}
 .expandedFolderBackground-1kSAf6 {
     background-color: var(--server-folder-expanded-background);
 }
-.folder-241Joy {
-    background-color: var(--server-folder-expanded-icon);
+.folderIconWrapper-1oRIZr {
+    background-color: var(--server-folder-expanded-icon-background);
 }
-.folder-241Joy.hover-3m7-WT {
+.folderIconWrapper-1oRIZr:hover {
     background-color: var(--server-folder-expanded-icon-hover);
 }
-.expandedFolderBackground-1kSAf6.collapsed-uGXEbi {
+.closedFolderIconWrapper-3tRb2d {
+    transition: all var(--server-hover-fade-out) ease-in-out;
     background-color: var(--server-folder-collapsed-background);
 }
-.expandedFolderBackground-1kSAf6.collapsed-uGXEbi.hover-3m7-WT {
+.closedFolderIconWrapper-3tRb2d:hover {
+    transition: all var(--server-hover-fade-in) ease-in-out;
     background-color: var(--server-folder-collapsed-background-hover);
+}
+.item-2LIpTv {
+    background-color: var(--server-dot);
+}
+.circleIconButton-1VxDrg {
+    background-color: var(--server-add-browse-background);
+    color: var(--server-add-browse-icon-color);
 }
 
 
@@ -140,12 +236,19 @@
 .container-1NXEtd {
     background: transparent;
 }
-.content-1x5b-n {
-    margin-top: var(--channels-position-top);
-    margin-right: var(--channels-position-right);
-    margin-bottom: var(--channels-position-bottom);
-    margin-left: var(--channels-position-left);
+.privateChannels-oVe7HL {
+    background-color: transparent;
 }
+.content-1x5b-n {
+    margin-top: var(--channels-spacing-top);
+    margin-right: var(--channels-spacing-right);
+    margin-bottom: var(--channels-spacing-bottom);
+    margin-left: var(--channels-spacing-left);
+}
+.scroller-WSmht3, .searchBar-3TnChZ {
+    background-color: transparent;
+}
+
 
 /* categories */
 .name-3l27Hl {
@@ -161,34 +264,19 @@
 }
 
 /* channel states, fuck you discord */
-.modeConnected-3IsKId .name-23GUGE,
-.modeSelected-346R90 .name-23GUGE {
-    color: var(--channel-selected-color);
-}
-.modeUnread-1qO3K1 .name-23GUGE,
-.notInteractive-1X92pj.modeConnected-3IsKId .name-23GUGE,
-.notInteractive-1X92pj.modeSelected-346R90 .name-23GUGE {
-    color: var(--channel-unread-color);
-}
-.modeConnected-3IsKId:hover .name-23GUGE,
-.modeSelected-346R90:hover .name-23GUGE,
-.modeUnread-1qO3K1:hover .name-23GUGE {
-    transition: all 0.2s ease-in-out;
-    color: var(--channel-hover-color);
-}
-.name-23GUGE {
-    color: var(--channel-color);
-}
+
 
 /* new unreads bar */
 .unread-2wipsx {
     background-color: var(--new-unread-bar);
 }
 .bar-2eAyLE {
-    color: var(--new-unread-bar-text);
+    transition: all var(--new-unread-hover-fade-out) ease-in-out;
+    color: var(--new-unread-text);
 }
 .bar-2eAyLE:hover {
-    color: var(--new-unread-bar-hover);
+    transition: all var(--new-unread-hover-fade-in) ease-in-out;
+    color: var(--new-unread-hover);
 }
 
 
@@ -200,18 +288,41 @@
 
 /* main chat window */
 .chat-2ZfjoI {
+    background: transparent;
+}
+.scrollableContainer-15eg7h {
+    background-color: var(--chat-text-box-background);
+}
+.channelTextArea-1FufC0 {
+    background-color: transparent;
+}
+.chatContent-3KubbW,
+.theme-dark .container-2cd8Mz,
+.theme-light .container-2cd8Mz {
     background: var(--chat-background);
+}
+.scroller-kQBbkU::-webkit-scrollbar {
+    width: var(--chat-scrollbar-width);
+}
+.scroller-kQBbkU::-webkit-scrollbar-track {
+    background-color: var(--chat-scrollbar-color);
+}
+.scroller-kQBbkU::-webkit-scrollbar-thumb {
+    background-color: var(--chat-scrollbar-thumb-color);
+}
+.scroller-kQBbkU::-webkit-scrollbar-thumb:hover {
+    background-color: var(--chat-scrollbar-thumb-hover-color);
 }
 
 
 /* member list */
-.membersWrap-2h-GB4 {
-    min-width: 240px;
+.membersWrap-3NUR2t {
+    min-width: 0px;
 }
-.container-2wlB3z {
+.container-2o3qEW {
     background: var(--members-background);
 }
-.members-1998pB, .members-1998pB>div {
+.members-3WRCEx, .members-3WRCEx>div {
     background-color: transparent;
 }
 
@@ -226,16 +337,16 @@
 
 
 /* loading screen when opening uncached server/channel */
-.wrapper-3vR61M, .wrapper-1F5TKx {
+.wrapper-3HVHpV, .wrapper-15CKyy {
     background-color: transparent;
 }
 
 
 /* random gradients in dark theme */
-.theme-dark .form-3gdLxP:before {
-    background: transparent;
-}
-.theme-dark .children-3xh0VB:after {
+.theme-dark .form-3gdLxP:before,
+.theme-light .form-3gdLxP:before,
+.theme-dark .children-3xh0VB:after,
+.theme-light .children-3xh0VB:after {
     background: transparent;
 }
 
@@ -260,3 +371,103 @@
 .winButtonClose-3Q8ZH5 {
     color: var(--close-button-color);
 }
+
+
+/* home icon */
+.homeIcon-r0w4ny {
+    background: var(--home-icon) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: var(--home-icon-width);
+    height: var(--home-icon-height);
+    margin-top: var(--home-icon-vertical-position);
+    margin-left: var(--home-icon-horizontal-position);
+}
+.homeIcon-r0w4ny > path {
+    fill: var(--home-icon-default-fill);
+}
+.childWrapper-1j_1ub {
+    background-color: var(--home-icon-background-color);
+}
+.wrapper-3kah-n .selected-1Drb7Z {
+    background-color: violet;
+}
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+.wrapper-3kah-n:hover .childWrapper-1j_1ub {
+    background-color: var(--home-icon-hover-color);
+}
+
+/* user popout */
+.userPopout-2j1gM4 {
+    background-color: var(--user-popout-background);
+}
+.input-2z42oC {
+    background-color: var(--user-popout-message-background);
+}
+.footer-3naVBw, .bodyInnerWrapper-2bQs1k {
+    background-color: transparent;
+}
+
+
+/* context menu */
+.menu-1QACrS {
+    background-color: var(--right-click-background);
+}
+
+
+/* quickswitcher */
+.quickswitcher-pKcM9U {
+    background-color: var(--quickswitcher-background);
+}
+.scroller-2qwVWY {
+    background-color: var(--quickswitcher-list-background);
+}
+.input-3r5zZY {
+    background-color: var(--quickswitcher-textbox-background);
+}
+
+
+/* server popout */
+.theme-dark .tooltipPrimary-3qLMbS,
+.theme-dark .tooltipPrimary-3qLMbS {
+    background-color: var(--server-popout-background);
+}
+
+
+/* search bars on front page (friends list) */
+.container-2oNtJn {
+    background-color: var(--friends-list-search-background);
+}
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+    background-color: var(--friends-list-search-small-background);
+}
+
+
+/* selected text */
+::selection {
+    color: var(--highlight-text-color);
+    background-color: var(--highlight-color);
+}
+::-moz-selection {
+    color: var(--highlight-text-color);
+    background-color: var(--highlight-color);
+}
+
+
+/* role background */
+.role-2TIOKu,
+.role-23oyrw {
+    background-color: var(--role-background);
+}
+
+/*
+@import url("https://tangerlemon.github.io/wah/css/wah916.css");
+                           
+,——.   ,——.  ,———.  ,——.  ,——. 
+|  |   |  | /  O  \ |  '——'  | 
+|  |.'.|  ||  .–.  ||  .——.  | 
+|   ,'.   ||  | |  ||  |  |  | 
+'——'   '——'`——' `——'`——'  `——' 
+                 
+
+*/
