@@ -1,0 +1,40 @@
+2.3 : 20220112
+ - added:
+   - colors for
+     - search bars
+     - selected text
+     - context menu background
+     - hyperlinks
+     - code block backgrounds
+     - embed backgrounds
+ - fixed:
+   - main chat background became transparent
+ - changes:
+   - made expanded server folder icon colored the same as background instead of transparent, so the top is square
+ 
+2.2 : 20220111
+ - added:
+   - ability to change color fade in/out durations
+   - backgrounds for popout menus
+     - user popout
+     - server popout
+     - quickswitcher
+ - fixed:
+   - server folders being the wrong color
+
+2.1 : 20220109
+ - added:
+   - server folder backgrounds
+   - scrollbar color/size
+   - ability to move "discord" at left of titlebar
+   - ability to move and recolor minimize/maximize/close buttons
+
+2.0 : 20220108
+ - nuked, writing original code for once
+ - added:
+   - custom background
+   - custom home icon
+   - custom "new unreads" banner on server bar
+
+1.0 : 2021
+ - created
