@@ -7,6 +7,19 @@
      - hyperlinks
      - code block backgrounds
      - embed backgrounds
+     - emoji picker background
+     - pings
+     - mention notification in server list (same as "new unread" banner with a different background color)
+     - buttons
+     - reactions
+     - icon at the top of new channels
+     - purchase gift menu
+     - chat text
+     - time and date
+     - server folder icons
+   - settings customization
+     - background
+     - sizing, coloring, and positioning of tabs/categories
  - fixed:
    - main chat background became transparent
  - changes:
@@ -15,7 +28,7 @@
 2.2 : 20220111
  - added:
    - ability to change color fade in/out durations
-   - backgrounds for popout menus
+   - backgrounds for
      - user popout
      - server popout
      - quickswitcher
@@ -28,6 +41,8 @@
    - scrollbar color/size
    - ability to move "discord" at left of titlebar
    - ability to move and recolor minimize/maximize/close buttons
+ - removed:
+   - extremely jank channel coloring
 
 2.0 : 20220108
  - nuked, writing original code for once
@@ -35,6 +50,7 @@
    - custom background
    - custom home icon
    - custom "new unreads" banner on server bar
+   - extremely jank channel coloring
 
 1.0 : 2021
  - created
