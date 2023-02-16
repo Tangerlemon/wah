@@ -1,3 +1,16 @@
+2.4 : 20230213
+ - added:
+   - colors for:
+     - threads popout
+     - pinned messages popout
+     - ping message background
+     - info panel name and tag
+     - everything in settings
+     - everything in server settings
+ - fixed:
+   - everything that broke after big discord updates (pretty much everything)
+   - janky server folder animations
+
 2.3 : 20220112
  - added:
    - colors for
