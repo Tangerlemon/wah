@@ -754,6 +754,15 @@
 .member-48YF_l, .members-3WRCEx {
     background-color: transparent;
 }
+.userPanelInnerThemed-2xZFjl,
+.overlayBackground-1KgwVi {
+    background: transparent !important;
+}
+.userPanelOuter-xc-WYi,
+.userProfileOuterThemed-3EfHmv,
+.profileColors-3Y0XaR {
+    background: var(--members-background);
+}
 
 
 /* top bar */
@@ -1013,4 +1022,16 @@
 /* click on emoji */
 .emojiSection-3QtaWO {
     background-color: var(--color-2);
+}
+
+.attachedBars-2BCP3l {
+    background: var(--color-3);
+}
+.replyBar-1oi75v,
+.threadSuggestionBar-3ExSyc {
+    background: transparent;
+}
+
+.theme-dark .pageWrapper-2PwDoS {
+    background-color: var(--color-1);
 }
