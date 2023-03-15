@@ -259,7 +259,7 @@
     --text-link: #7068a0;
     --background-secondary-alt: transparent;
     --background-tertiary: transparent;
-    --background-floating: transparent;
+    --background-floating: var(--color-1);
     --background-nested-floating: transparent;
     --background-mobile-primary: transparent;
     --background-mobile-secondary: transparent;
