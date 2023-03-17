@@ -1,3 +1,11 @@
+2.4.2 : 20230317
+ - added:
+   - "change voice channel" confirmation background
+   - ping autofill popup
+   - misc rare popups
+ - changes:
+   - slight context menu color tweak
+
 2.4.1 : 20230216
  - added:
    - reply to message bar color
