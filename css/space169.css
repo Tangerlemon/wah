@@ -24,8 +24,8 @@
     --home-icon-hover-color: #50408060;        /*   with no icon   */
     --home-icon-width: 35px;
     --home-icon-height: 35px;
-    --home-icon-vertical-position: -5px;
-    --home-icon-horizontal-position: -2px;
+    --home-icon-vertical-position: 0px;
+    --home-icon-horizontal-position: 0px;
     --home-icon-hover-fade-in: 0.2s;
     --home-icon-hover-fade-out: 0.2s;
 
