@@ -3,8 +3,8 @@
 
 :root {
     /* images */
-    --background-image: url('https://tangerlemon.github.io/wah/images/wahTall.png');
-    --home-icon: url('https://tangerlemon.github.io/wah/images/takodachi_bounce.gif');
+    --background-image: url('https://cdn.discordapp.com/attachments/861844407560568882/1076022926916206602/space_wallpaper.jpg');
+    --home-icon: url('https://img.icons8.com/color/512/nebula.png');
 
 
     /* variables to make things easier for myself */
@@ -524,10 +524,9 @@
 /* background */
 .bg-1QIAus {
     background: var(--background-image) center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
-
 
 /* messages */
 .content-3spvdd {
